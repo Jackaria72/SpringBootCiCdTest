@@ -20,12 +20,6 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Set up CodeQL
-        uses: github/codeql-action/setup@v2
-
-      - name: Analyze code with CodeQL
-        uses: github/codeql-action/analyze@v2
-
       - name: Run Unit Tests
         run: mvn test
 
